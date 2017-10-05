@@ -139,16 +139,6 @@
       - omeka
       - apache
 
-  - name: omeka | change environment to development
-    lineinfile:
-      path: '{{ omeka.path }}/.htaccess'
-      backup: yes
-      regexp: '^SetEnv APPLICATION_ENV "production"$'
-      line: 'SetEnv APPLICATION_ENV "development"'
-    tags:
-      - omeka
-      - apache
-
   - name: apache | remove default site
     become: yes
     file:
@@ -204,6 +194,16 @@
     copy: src={{ omeka.database_settings }} dest={{ omeka.path }}/config
     tags:
       - omeka
+
+  - name: omeka | change environment to development
+    lineinfile:
+      path: '{{ omeka.path }}/.htaccess'
+      backup: yes
+      regexp: '^SetEnv APPLICATION_ENV "production"$'
+      line: 'SetEnv APPLICATION_ENV "development"'
+    tags:
+      - omeka
+      - apache
 
   - name: restart apache
     command: echo "restating apache"
