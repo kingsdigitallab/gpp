@@ -1,0 +1,221 @@
+---
+- hosts: all
+  vars_files:
+    - vars.yml
+  gather_facts: false
+  become: yes
+
+  tasks:
+  - name: apt | install https transport for apt
+    apt:
+      pkg: apt-transport-https
+      state: installed
+      update_cache: yes
+    tags:
+      -system
+
+  - name: node | download source repository install script
+    become: yes
+    get_url:
+      url: '{{ node.url }}'
+      dest: /tmp/nodejs.sh
+    tags:
+      - system
+      - node
+
+  - name: node | add source repository
+    become: yes
+    command: bash /tmp/nodejs.sh
+    tags:
+      - system
+      - node
+
+  - name: apt | install required system packages
+    apt:
+      pkg: '{{ item }}'
+      state: latest
+      update_cache: yes
+    with_items: '{{ system_packages }}'
+    tags:
+      - system
+
+  - name: pip | install mysql-python
+    become: yes
+    pip:
+      name: mysql-python
+      state: latest
+    tags:
+      - system
+
+  - name: zsh | clone oh-my-zsh repo
+    git: repo={{ zsh.oh_my_zsh }} dest={{ user_home }}/.oh-my-zsh
+    tags:
+      - system
+
+  - name: zsh | deploy .zshrc
+    copy: src={{ zsh.zshrc }} dest={{ user_home }}/.zshrc owner=vagrant
+    tags:
+      - system
+
+  - name: zsh | as default shell
+    user: name=vagrant shell=/bin/zsh
+    tags:
+      - system
+
+  - name: motd | deploy motd
+    become: yes
+    copy: src={{ motd.file }} dest=/etc/update-motd.d owner=root
+    tags:
+      - system
+
+  - name: motd | permissions
+    become: yes
+    file:
+      path: /etc/update-motd.d/{{ motd.file }}
+      mode: 'u+x'
+    tags:
+      - system
+
+- hosts: all
+  vars_files:
+    - vars.yml
+  gather_facts: false
+
+  tasks:
+  - name: mysql | create user
+    become: yes
+    mysql_user:
+      name: '{{ mysql.user }}'
+      password: '{{ mysql.password }}'
+      priv: '*.*:ALL'
+      state: present
+    tags:
+      - db
+
+  - name: mysql | create db
+    become_user: '{{ mysql.user }}'
+    mysql_db:
+      name: '{{ mysql.name }}'
+      state: present
+      login_user: '{{ mysql.user }}'
+      login_password: '{{ mysql.password }}'
+    tags:
+      - db
+
+- hosts: all
+  vars_files:
+    - vars.yml
+  gather_facts: false
+
+  tasks:
+  - name: omeka | clone omeka repo
+    become: yes
+    git:
+      repo: '{{ omeka.url }}'
+      dest: '{{ omeka.path }}'
+      force: no
+      update: yes
+    ignore_errors: yes
+    tags:
+      - omeka
+
+  - name: omeka | set permissions
+    become: yes
+    file:
+      path: '{{ omeka.path }}'
+      owner: vagrant
+      group: www-data
+      mode: 'g+w'
+      recurse: yes
+    tags:
+      - omeka
+
+  - name: apache | enable rewrite
+    become: yes
+    apache2_module:
+      state: present
+      name: rewrite
+    tags:
+      - omeka
+      - apache
+
+  - name: omeka | change environment to development
+    lineinfile:
+      path: '{{ omeka.path }}/.htaccess'
+      backup: yes
+      regexp: '^SetEnv APPLICATION_ENV "production"$'
+      line: 'SetEnv APPLICATION_ENV "development"'
+    tags:
+      - omeka
+      - apache
+
+  - name: apache | remove default site
+    become: yes
+    file:
+      path: /etc/apache2/sites-enabled/000-default.conf
+      state: absent
+    tags:
+      - omeka
+      - apache
+
+  - name: apache | add omeka site configuration
+    become: yes
+    copy: src={{ omeka.apache_conf }} dest=/etc/apache2/sites-available owner=root
+    tags:
+      - omeka
+      - apache
+
+  - name: apache | enable omeka site
+    become: yes
+    file:
+      src: /etc/apache2/sites-available/{{ omeka.apache_conf }}
+      dest: /etc/apache2/sites-enabled/{{ omeka.apache_conf }}
+      state: link
+    notify: apache | restart apache
+    tags:
+      - omeka
+      - apache
+
+  - name: npm | install
+    shell: 'npm install'
+    args:
+      chdir: '{{ omeka.path }}'
+    tags:
+      - omeka
+      - npm
+
+  - name: npm | install gulp globally
+    become: yes
+    npm:
+      name: gulp-cli
+      global: yes
+    tags:
+      - omeka
+      - npm
+
+  - name: omeka | gulp init
+    shell: 'gulp init'
+    args:
+      chdir: '{{ omeka.path }}'
+    tags:
+      - omeka
+
+  - name: omeka | database settings
+    copy: src={{ omeka.database_settings }} dest={{ omeka.path }}/config
+    tags:
+      - omeka
+
+  - name: restart apache
+    command: echo "restating apache"
+    notify: apache | restart apache
+    tags:
+      - omeka
+
+  handlers:
+  - name: apache | restart apache
+    become: yes
+    service:
+      name: apache2
+      state: restarted
+    tags:
+      - apache

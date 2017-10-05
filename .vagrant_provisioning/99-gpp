@@ -1,0 +1,17 @@
+#!/bin/sh
+
+[ -r /etc/lsb-release ] && . /etc/lsb-release
+
+if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
+    # Fall back to using the very slow lsb_release utility
+    DISTRIB_DESCRIPTION=$(lsb_release -s -d)
+fi
+
+echo "-------------------------------------------------------------------"
+echo "Welcome to the KDL Vagrant Virtual Environment for GPP!"
+echo
+echo "- Report issues at https://app.activecollab.com/148987/projects/758"
+echo
+echo "- Omeka S available at http://localhost:8000/"
+echo "-------------------------------------------------------------------"
+echo

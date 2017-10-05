@@ -1,0 +1,11 @@
+app: {name: gpp}
+motd: {file: 99-gpp}
+mysql: {name: omeka_s, password: vagrant, user: vagrant}
+node: {url: 'https://deb.nodesource.com/setup_8.x'}
+omeka: {apache_conf: 000-omeka.conf, database_settings: database.ini, path: /var/www/html/omeka-s,
+  url: 'https://github.com/omeka/omeka-s.git'}
+system_packages: [ack-grep, apache2, aptitude, binutils, build-essential, git, git-core,
+  libapache2-mod-php, libmysqlclient-dev, mysql-server, nfs-common, nodejs, open-vm-tools,
+  php, php-mbstring, php-mysql, php-zip, phpunit, python-pip, unzip, vim-nox, zsh]
+user_home: /home/vagrant
+zsh: {oh_my_zsh: 'https://github.com/robbyrussell/oh-my-zsh.git', zshrc: zshrc}
