@@ -82,6 +82,42 @@
   gather_facts: false
 
   tasks:
+  - name: php | increase post_max_size
+    become: yes
+    lineinfile:
+      path: /etc/php/{{ php.version }}/apache2/php.ini
+      backup: yes
+      regexp: '^post_max_size = \d+M$'
+      line: 'post_max_size = 25MB'
+    tags:
+      - php
+
+  - name: php | increase upload_max_size
+    become: yes
+    lineinfile:
+      path: /etc/php/{{ php.version }}/apache2/php.ini
+      backup: yes
+      regexp: '^upload_max_size = \d+M$'
+      line: 'upload_max_size = 25MB'
+    tags:
+      - php
+
+  - name: php | increase memory_limit
+    become: yes
+    lineinfile:
+      path: /etc/php/{{ php.version }}/apache2/php.ini
+      backup: yes
+      regexp: '^memory_limit = \d+M$'
+      line: 'memory_limit = 25MB'
+    tags:
+      - php
+
+- hosts: all
+  vars_files:
+    - vars.yml
+  gather_facts: false
+
+  tasks:
   - name: mysql | create user
     become: yes
     mysql_user:
