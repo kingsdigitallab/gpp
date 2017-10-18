@@ -25,4 +25,5 @@ demos/
 extras/documentation
 
 *.retry
+.DS_Store
 .vagrant
