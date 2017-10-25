@@ -16,7 +16,7 @@
       <owl:imports rdf:resource="&xlink;" />
       <owl:imports rdf:resource="&xml;" />
    </owl:Ontology>
-   <owl:ObjectProperty rdf:ID="eac-cpf">
+   <rdf:Property rdf:ID="eac-cpf">
       <rdfs:range>
          <owl:Class rdf:ID="eac-cpfType">
             <rdfs:subClassOf>
@@ -75,8 +75,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="cpfDescription">
+   </rdf:Property>
+   <rdf:Property rdf:ID="cpfDescription">
       <rdfs:range>
          <owl:Class rdf:ID="cpfDescriptionType">
             <rdfs:subClassOf>
@@ -124,8 +124,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="multipleIdentities">
+   </rdf:Property>
+   <rdf:Property rdf:ID="multipleIdentities">
       <rdfs:range>
          <owl:Class rdf:ID="multipleIdentitiesType">
             <rdfs:subClassOf>
@@ -163,8 +163,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="control">
+   </rdf:Property>
+   <rdf:Property rdf:ID="control">
       <rdfs:range>
          <owl:Class rdf:ID="controlType">
             <rdfs:subClassOf>
@@ -262,8 +262,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="recordId">
+   </rdf:Property>
+   <rdf:Property rdf:ID="recordId">
       <rdfs:range>
          <owl:Class rdf:ID="recordIdType">
             <rdfs:subClassOf>
@@ -274,8 +274,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="otherRecordId">
+   </rdf:Property>
+   <rdf:Property rdf:ID="otherRecordId">
       <rdfs:range>
          <owl:Class rdf:ID="otherRecordIdType">
             <rdfs:subClassOf>
@@ -287,8 +287,8 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.id" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="maintenanceStatus">
+   </rdf:Property>
+   <rdf:Property rdf:ID="maintenanceStatus">
       <rdfs:range>
          <owl:Class rdf:ID="maintenanceStatusType">
             <rdfs:subClassOf>
@@ -299,8 +299,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="publicationStatus">
+   </rdf:Property>
+   <rdf:Property rdf:ID="publicationStatus">
       <rdfs:range>
          <owl:Class rdf:ID="publicationStatusType">
             <rdfs:subClassOf>
@@ -311,8 +311,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="maintenanceAgency">
+   </rdf:Property>
+   <rdf:Property rdf:ID="maintenanceAgency">
       <rdfs:range>
          <owl:Class rdf:ID="maintenanceAgencyType">
             <rdfs:subClassOf>
@@ -354,8 +354,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="agencyCode">
+   </rdf:Property>
+   <rdf:Property rdf:ID="agencyCode">
       <rdfs:range>
          <owl:Class rdf:ID="agencyCodeType">
             <rdfs:subClassOf>
@@ -366,8 +366,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="otherAgencyCode">
+   </rdf:Property>
+   <rdf:Property rdf:ID="otherAgencyCode">
       <rdfs:range>
          <owl:Class rdf:ID="otherAgencyCodeType">
             <rdfs:subClassOf>
@@ -379,8 +379,8 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#a.localType" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="agencyName">
+   </rdf:Property>
+   <rdf:Property rdf:ID="agencyName">
       <rdfs:range>
          <owl:Class rdf:ID="agencyNameType">
             <rdfs:subClassOf>
@@ -391,8 +391,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="maintenanceHistory">
+   </rdf:Property>
+   <rdf:Property rdf:ID="maintenanceHistory">
       <rdfs:range>
          <owl:Class rdf:ID="maintenanceHistoryType">
             <rdfs:subClassOf>
@@ -414,8 +414,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="maintenanceEvent">
+   </rdf:Property>
+   <rdf:Property rdf:ID="maintenanceEvent">
       <rdfs:range>
          <owl:Class rdf:ID="maintenanceEventType">
             <rdfs:subClassOf>
@@ -477,8 +477,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="eventType">
+   </rdf:Property>
+   <rdf:Property rdf:ID="eventType">
       <rdfs:range>
          <owl:Class rdf:ID="eventTypeType">
             <rdfs:subClassOf>
@@ -489,8 +489,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="eventDateTime">
+   </rdf:Property>
+   <rdf:Property rdf:ID="eventDateTime">
       <rdfs:range>
          <owl:Class rdf:ID="eventDateTimeType">
             <rdfs:subClassOf>
@@ -507,8 +507,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="agentType">
+   </rdf:Property>
+   <rdf:Property rdf:ID="agentType">
       <rdfs:range>
          <owl:Class rdf:ID="agentTypeType">
             <rdfs:subClassOf>
@@ -519,8 +519,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="agent">
+   </rdf:Property>
+   <rdf:Property rdf:ID="agent">
       <rdfs:range>
          <owl:Class rdf:ID="agentType">
             <rdfs:subClassOf>
@@ -531,8 +531,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="eventDescription">
+   </rdf:Property>
+   <rdf:Property rdf:ID="eventDescription">
       <rdfs:range>
          <owl:Class rdf:ID="eventDescriptionType">
             <rdfs:subClassOf>
@@ -543,8 +543,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="languageDeclaration">
+   </rdf:Property>
+   <rdf:Property rdf:ID="languageDeclaration">
       <rdfs:range>
          <owl:Class rdf:ID="languageDeclarationType">
             <rdfs:subClassOf>
@@ -586,8 +586,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="conventionDeclaration">
+   </rdf:Property>
+   <rdf:Property rdf:ID="conventionDeclaration">
       <rdfs:range>
          <owl:Class rdf:ID="conventionDeclarationType">
             <rdfs:subClassOf>
@@ -624,8 +624,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="localTypeDeclaration">
+   </rdf:Property>
+   <rdf:Property rdf:ID="localTypeDeclaration">
       <rdfs:range>
          <owl:Class rdf:ID="localTypeDeclarationType">
             <rdfs:subClassOf>
@@ -662,8 +662,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="abbreviation">
+   </rdf:Property>
+   <rdf:Property rdf:ID="abbreviation">
       <rdfs:range>
          <owl:Class rdf:ID="abbreviationType">
             <rdfs:subClassOf>
@@ -674,8 +674,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="localControl">
+   </rdf:Property>
+   <rdf:Property rdf:ID="localControl">
       <rdfs:range>
          <owl:Class rdf:ID="localControlType">
             <rdfs:subClassOf>
@@ -712,8 +712,8 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#a.localType" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="sources">
+   </rdf:Property>
+   <rdf:Property rdf:ID="sources">
       <rdfs:range>
          <owl:Class rdf:ID="sourcesType">
             <rdfs:subClassOf>
@@ -741,8 +741,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="source">
+   </rdf:Property>
+   <rdf:Property rdf:ID="source">
       <rdfs:range>
          <owl:Class rdf:ID="sourceType">
             <rdfs:subClassOf>
@@ -790,8 +790,8 @@
             <rdfs:subClassOf rdf:resource="&xlink;simpleLink" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="sourceEntry">
+   </rdf:Property>
+   <rdf:Property rdf:ID="sourceEntry">
       <rdfs:range>
          <owl:Class rdf:ID="sourceEntryType">
             <rdfs:subClassOf>
@@ -803,8 +803,8 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.entryLanguageAttributes" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="identity">
+   </rdf:Property>
+   <rdf:Property rdf:ID="identity">
       <rdfs:range>
          <owl:Class rdf:ID="identityType">
             <rdfs:subClassOf>
@@ -919,8 +919,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="entityId">
+   </rdf:Property>
+   <rdf:Property rdf:ID="entityId">
       <rdfs:range>
          <owl:Class rdf:ID="entityIdType">
             <rdfs:subClassOf>
@@ -932,8 +932,8 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.id" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="entityType">
+   </rdf:Property>
+   <rdf:Property rdf:ID="entityType">
       <rdfs:range>
          <owl:Class rdf:ID="entityTypeType">
             <rdfs:subClassOf>
@@ -944,8 +944,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="part">
+   </rdf:Property>
+   <rdf:Property rdf:ID="part">
       <rdfs:range>
          <owl:Class rdf:ID="partType">
             <rdfs:subClassOf>
@@ -962,8 +962,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="useDates">
+   </rdf:Property>
+   <rdf:Property rdf:ID="useDates">
       <rdfs:range>
          <owl:Class rdf:ID="useDatesType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.dates" />
@@ -975,8 +975,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="nameEntryParallel">
+   </rdf:Property>
+   <rdf:Property rdf:ID="nameEntryParallel">
       <rdfs:range>
          <owl:Class rdf:ID="nameEntryParallelType">
             <rdfs:subClassOf>
@@ -1021,8 +1021,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="nameEntry">
+   </rdf:Property>
+   <rdf:Property rdf:ID="nameEntry">
       <rdfs:range>
          <owl:Class rdf:ID="nameEntryType">
             <rdfs:subClassOf>
@@ -1056,8 +1056,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="preferredForm">
+   </rdf:Property>
+   <rdf:Property rdf:ID="preferredForm">
       <rdfs:range>
          <owl:Class rdf:ID="preferredFormType">
             <rdfs:subClassOf>
@@ -1068,7 +1068,7 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="m.nameEntryAuthorizedorAlternative">
       <rdfs:subClassOf>
          <owl:Class>
@@ -1091,7 +1091,7 @@
          </owl:Class>
       </rdfs:subClassOf>
    </owl:Class>
-   <owl:ObjectProperty rdf:ID="authorizedForm">
+   <rdf:Property rdf:ID="authorizedForm">
       <rdfs:range>
          <owl:Class rdf:ID="authorizedFormType">
             <rdfs:subClassOf>
@@ -1102,8 +1102,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="alternativeForm">
+   </rdf:Property>
+   <rdf:Property rdf:ID="alternativeForm">
       <rdfs:range>
          <owl:Class rdf:ID="alternativeFormType">
             <rdfs:subClassOf>
@@ -1114,8 +1114,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="description">
+   </rdf:Property>
+   <rdf:Property rdf:ID="description">
       <rdfs:range>
          <owl:Class rdf:ID="descriptionType">
             <rdfs:subClassOf>
@@ -1234,8 +1234,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="existDates">
+   </rdf:Property>
+   <rdf:Property rdf:ID="existDates">
       <rdfs:range>
          <owl:Class rdf:ID="existDatesType">
             <rdfs:subClassOf>
@@ -1264,8 +1264,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="places">
+   </rdf:Property>
+   <rdf:Property rdf:ID="places">
       <rdfs:range>
          <owl:Class rdf:ID="placesType">
             <rdfs:subClassOf>
@@ -1303,8 +1303,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="localDescriptions">
+   </rdf:Property>
+   <rdf:Property rdf:ID="localDescriptions">
       <rdfs:range>
          <owl:Class rdf:ID="localDescriptionsType">
             <rdfs:subClassOf>
@@ -1337,8 +1337,8 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#a.localType" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="languagesUsed">
+   </rdf:Property>
+   <rdf:Property rdf:ID="languagesUsed">
       <rdfs:range>
          <owl:Class rdf:ID="languagesUsedType">
             <rdfs:subClassOf>
@@ -1371,8 +1371,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="legalStatuses">
+   </rdf:Property>
+   <rdf:Property rdf:ID="legalStatuses">
       <rdfs:range>
          <owl:Class rdf:ID="legalStatusesType">
             <rdfs:subClassOf>
@@ -1410,8 +1410,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="occupations">
+   </rdf:Property>
+   <rdf:Property rdf:ID="occupations">
       <rdfs:range>
          <owl:Class rdf:ID="occupationsType">
             <rdfs:subClassOf>
@@ -1449,8 +1449,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="functions">
+   </rdf:Property>
+   <rdf:Property rdf:ID="functions">
       <rdfs:range>
          <owl:Class rdf:ID="functionsType">
             <rdfs:subClassOf>
@@ -1488,8 +1488,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="mandates">
+   </rdf:Property>
+   <rdf:Property rdf:ID="mandates">
       <rdfs:range>
          <owl:Class rdf:ID="mandatesType">
             <rdfs:subClassOf>
@@ -1527,7 +1527,7 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="m.discursiveSet">
       <rdfs:subClassOf>
          <owl:Class>
@@ -1568,7 +1568,7 @@
          </owl:Class>
       </rdfs:subClassOf>
    </owl:Class>
-   <owl:ObjectProperty rdf:ID="place">
+   <rdf:Property rdf:ID="place">
       <rdfs:range>
          <owl:Class rdf:ID="placeType">
             <rdfs:subClassOf>
@@ -1617,8 +1617,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="address">
+   </rdf:Property>
+   <rdf:Property rdf:ID="address">
       <rdfs:range>
          <owl:Class rdf:ID="addressType">
             <rdfs:subClassOf>
@@ -1646,8 +1646,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="addressLine">
+   </rdf:Property>
+   <rdf:Property rdf:ID="addressLine">
       <rdfs:range>
          <owl:Class rdf:ID="addressLineType">
             <rdfs:subClassOf>
@@ -1664,8 +1664,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="placeEntry">
+   </rdf:Property>
+   <rdf:Property rdf:ID="placeEntry">
       <rdfs:range>
          <owl:Class rdf:ID="placeEntryType">
             <rdfs:subClassOf>
@@ -1719,8 +1719,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="localDescription">
+   </rdf:Property>
+   <rdf:Property rdf:ID="localDescription">
       <rdfs:range>
          <owl:Class rdf:ID="localDescriptionType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.simpleDescription" />
@@ -1733,8 +1733,8 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#a.localType" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="languageUsed">
+   </rdf:Property>
+   <rdf:Property rdf:ID="languageUsed">
       <rdfs:range>
          <owl:Class rdf:ID="languageUsedType">
             <rdfs:subClassOf>
@@ -1782,8 +1782,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="legalStatus">
+   </rdf:Property>
+   <rdf:Property rdf:ID="legalStatus">
       <rdfs:range>
          <owl:Class rdf:ID="legalStatusType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.simpleDescription" />
@@ -1801,8 +1801,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="occupation">
+   </rdf:Property>
+   <rdf:Property rdf:ID="occupation">
       <rdfs:range>
          <owl:Class rdf:ID="occupationType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.simpleDescription" />
@@ -1820,8 +1820,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="function">
+   </rdf:Property>
+   <rdf:Property rdf:ID="function">
       <rdfs:range>
          <owl:Class rdf:ID="functionType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.simpleDescription" />
@@ -1839,8 +1839,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="mandate">
+   </rdf:Property>
+   <rdf:Property rdf:ID="mandate">
       <rdfs:range>
          <owl:Class rdf:ID="mandateType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.simpleDescription" />
@@ -1858,7 +1858,7 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="m.simpleDescription">
       <rdfs:subClassOf>
          <owl:Class>
@@ -1884,7 +1884,7 @@
          </owl:Class>
       </rdfs:subClassOf>
    </owl:Class>
-   <owl:ObjectProperty rdf:ID="placeRole">
+   <rdf:Property rdf:ID="placeRole">
       <rdfs:range>
          <owl:Class rdf:ID="placeRoleType">
             <rdfs:subClassOf>
@@ -1908,8 +1908,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="structureOrGenealogy">
+   </rdf:Property>
+   <rdf:Property rdf:ID="structureOrGenealogy">
       <rdfs:range>
          <owl:Class rdf:ID="structureOrGenealogyType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.discursiveSet" />
@@ -1927,8 +1927,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="generalContext">
+   </rdf:Property>
+   <rdf:Property rdf:ID="generalContext">
       <rdfs:range>
          <owl:Class rdf:ID="generalContextType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.discursiveSet" />
@@ -1946,8 +1946,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="biogHist">
+   </rdf:Property>
+   <rdf:Property rdf:ID="biogHist">
       <rdfs:range>
          <owl:Class rdf:ID="biogHistType">
             <rdfs:subClassOf>
@@ -2004,8 +2004,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="abstract">
+   </rdf:Property>
+   <rdf:Property rdf:ID="abstract">
       <rdfs:range>
          <owl:Class rdf:ID="abstractType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.mixedContent" />
@@ -2023,8 +2023,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="relations">
+   </rdf:Property>
+   <rdf:Property rdf:ID="relations">
       <rdfs:range>
          <owl:Class rdf:ID="relationsType">
             <rdfs:subClassOf>
@@ -2062,8 +2062,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="relationEntry">
+   </rdf:Property>
+   <rdf:Property rdf:ID="relationEntry">
       <rdfs:range>
          <owl:Class rdf:ID="relationEntryType">
             <rdfs:subClassOf>
@@ -2081,8 +2081,8 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.entryLanguageAttributes" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="objectXMLWrap">
+   </rdf:Property>
+   <rdf:Property rdf:ID="objectXMLWrap">
       <rdfs:range>
          <owl:Class rdf:ID="objectXMLWrapType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#e.anyName" />
@@ -2094,8 +2094,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="objectBinWrap">
+   </rdf:Property>
+   <rdf:Property rdf:ID="objectBinWrap">
       <rdfs:range>
          <owl:Class rdf:ID="objectBinWrapType">
             <rdfs:subClassOf>
@@ -2106,7 +2106,7 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="m.relationBody">
       <rdfs:subClassOf>
          <owl:Class>
@@ -2149,7 +2149,7 @@
       </rdfs:subClassOf>
       <rdfs:subClassOf rdf:resource="&xlink;simpleLink" />
    </owl:Class>
-   <owl:ObjectProperty rdf:ID="cpfRelation">
+   <rdf:Property rdf:ID="cpfRelation">
       <rdfs:range>
          <owl:Class rdf:ID="cpfRelationType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.relationBody" />
@@ -2167,8 +2167,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="resourceRelation">
+   </rdf:Property>
+   <rdf:Property rdf:ID="resourceRelation">
       <rdfs:range>
          <owl:Class rdf:ID="resourceRelationType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.relationBody" />
@@ -2186,8 +2186,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="functionRelation">
+   </rdf:Property>
+   <rdf:Property rdf:ID="functionRelation">
       <rdfs:range>
          <owl:Class rdf:ID="functionRelationType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.relationBody" />
@@ -2205,8 +2205,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="alternativeSet">
+   </rdf:Property>
+   <rdf:Property rdf:ID="alternativeSet">
       <rdfs:range>
          <owl:Class rdf:ID="alternativeSetType">
             <rdfs:subClassOf>
@@ -2234,8 +2234,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="setComponent">
+   </rdf:Property>
+   <rdf:Property rdf:ID="setComponent">
       <rdfs:range>
          <owl:Class rdf:ID="setComponentType">
             <rdfs:subClassOf>
@@ -2283,8 +2283,8 @@
             <rdfs:subClassOf rdf:resource="&xlink;simpleLink" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="componentEntry">
+   </rdf:Property>
+   <rdf:Property rdf:ID="componentEntry">
       <rdfs:range>
          <owl:Class rdf:ID="componentEntryType">
             <rdfs:subClassOf>
@@ -2302,7 +2302,7 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.entryLanguageAttributes" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="e.anyName">
       <rdfs:subClassOf>
          <owl:Class>
@@ -2339,7 +2339,7 @@
          </owl:Restriction>
       </rdfs:subClassOf>
    </owl:Class>
-   <owl:ObjectProperty rdf:ID="date">
+   <rdf:Property rdf:ID="date">
       <rdfs:range>
          <owl:Class rdf:ID="dateType">
             <rdfs:subClassOf>
@@ -2357,7 +2357,7 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.dateSingle" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="m.dateSingle">
       <rdfs:subClassOf>
          <owl:Restriction>
@@ -2378,7 +2378,7 @@
          </owl:Restriction>
       </rdfs:subClassOf>
    </owl:Class>
-   <owl:ObjectProperty rdf:ID="dateRange">
+   <rdf:Property rdf:ID="dateRange">
       <rdfs:range>
          <owl:Class rdf:ID="dateRangeType">
             <rdfs:subClassOf>
@@ -2411,8 +2411,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="fromDate">
+   </rdf:Property>
+   <rdf:Property rdf:ID="fromDate">
       <rdfs:range>
          <owl:Class rdf:ID="fromDateType">
             <rdfs:subClassOf>
@@ -2424,8 +2424,8 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.dateSingle" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="toDate">
+   </rdf:Property>
+   <rdf:Property rdf:ID="toDate">
       <rdfs:range>
          <owl:Class rdf:ID="toDateType">
             <rdfs:subClassOf>
@@ -2437,8 +2437,8 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.dateSingle" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="dateSet">
+   </rdf:Property>
+   <rdf:Property rdf:ID="dateSet">
       <rdfs:range>
          <owl:Class rdf:ID="dateSetType">
             <rdfs:subClassOf>
@@ -2499,7 +2499,7 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="m.dates">
       <rdfs:subClassOf>
          <owl:Class>
@@ -2532,7 +2532,7 @@
          </owl:Class>
       </rdfs:subClassOf>
    </owl:Class>
-   <owl:ObjectProperty rdf:ID="language">
+   <rdf:Property rdf:ID="language">
       <rdfs:range>
          <owl:Class rdf:ID="languageType">
             <rdfs:subClassOf>
@@ -2549,8 +2549,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="script">
+   </rdf:Property>
+   <rdf:Property rdf:ID="script">
       <rdfs:range>
          <owl:Class rdf:ID="scriptType">
             <rdfs:subClassOf>
@@ -2562,7 +2562,7 @@
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#a.scriptCode" />
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="a.scriptCode">
       <rdfs:subClassOf>
          <owl:Restriction>
@@ -2599,7 +2599,7 @@
          </owl:Restriction>
       </rdfs:subClassOf>
    </owl:Class>
-   <owl:ObjectProperty rdf:ID="term">
+   <rdf:Property rdf:ID="term">
       <rdfs:range>
          <owl:Class rdf:ID="termType">
             <rdfs:subClassOf>
@@ -2623,8 +2623,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="descriptiveNote">
+   </rdf:Property>
+   <rdf:Property rdf:ID="descriptiveNote">
       <rdfs:range>
          <owl:Class rdf:ID="descriptiveNoteType">
             <rdfs:subClassOf>
@@ -2646,8 +2646,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="citation">
+   </rdf:Property>
+   <rdf:Property rdf:ID="citation">
       <rdfs:range>
          <owl:Class rdf:ID="citationType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.mixedContent" />
@@ -2666,7 +2666,7 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="m.id">
       <rdfs:subClassOf>
          <owl:Restriction>
@@ -2675,7 +2675,7 @@
          </owl:Restriction>
       </rdfs:subClassOf>
    </owl:Class>
-   <owl:ObjectProperty rdf:ID="p">
+   <rdf:Property rdf:ID="p">
       <rdfs:range>
          <owl:Class rdf:ID="pType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.mixedContent" />
@@ -2687,11 +2687,11 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="m.mixedContent">
       <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#e.span" />
    </owl:Class>
-   <owl:ObjectProperty rdf:ID="chronList">
+   <rdf:Property rdf:ID="chronList">
       <rdfs:range>
          <owl:Class rdf:ID="chronListType">
             <rdfs:subClassOf>
@@ -2719,8 +2719,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="chronItem">
+   </rdf:Property>
+   <rdf:Property rdf:ID="chronItem">
       <rdfs:range>
          <owl:Class rdf:ID="chronItemType">
             <rdfs:subClassOf>
@@ -2782,8 +2782,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="event">
+   </rdf:Property>
+   <rdf:Property rdf:ID="event">
       <rdfs:range>
          <owl:Class rdf:ID="eventType">
             <rdfs:subClassOf>
@@ -2800,8 +2800,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="list">
+   </rdf:Property>
+   <rdf:Property rdf:ID="list">
       <rdfs:range>
          <owl:Class rdf:ID="listType">
             <rdfs:subClassOf>
@@ -2829,8 +2829,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="item">
+   </rdf:Property>
+   <rdf:Property rdf:ID="item">
       <rdfs:range>
          <owl:Class rdf:ID="itemType">
             <rdfs:subClassOf rdf:resource="urn:isbn:1-931666-33-4#m.mixedContent" />
@@ -2848,8 +2848,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="outline">
+   </rdf:Property>
+   <rdf:Property rdf:ID="outline">
       <rdfs:range>
          <owl:Class rdf:ID="outlineType">
             <rdfs:subClassOf>
@@ -2877,8 +2877,8 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
-   <owl:ObjectProperty rdf:ID="level">
+   </rdf:Property>
+   <rdf:Property rdf:ID="level">
       <rdfs:range>
          <owl:Class rdf:ID="levelType">
             <rdfs:subClassOf>
@@ -2916,7 +2916,7 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="e.span">
       <rdfs:subClassOf>
          <owl:Class>
@@ -2929,7 +2929,7 @@
          </owl:Class>
       </rdfs:subClassOf>
    </owl:Class>
-   <owl:ObjectProperty rdf:ID="span">
+   <rdf:Property rdf:ID="span">
       <rdfs:range>
          <owl:Class rdf:ID="spanType">
             <rdfs:subClassOf>
@@ -2952,7 +2952,7 @@
             </rdfs:subClassOf>
          </owl:Class>
       </rdfs:range>
-   </owl:ObjectProperty>
+   </rdf:Property>
    <owl:Class rdf:ID="a.localType">
       <rdfs:subClassOf>
          <owl:Restriction>
@@ -3039,24 +3039,24 @@
       </rdfs:subClassOf>
    </owl:Class>
    <owl:ObjectProperty rdf:ID="any" />
-   <owl:DatatypeProperty rdf:ID="accuarcy" />
-   <owl:DatatypeProperty rdf:ID="altitude" />
-   <owl:DatatypeProperty rdf:ID="countryCode" />
-   <owl:DatatypeProperty rdf:ID="cpfRelationType" />
-   <owl:DatatypeProperty rdf:ID="functionRelationType" />
-   <owl:DatatypeProperty rdf:ID="identityType" />
-   <owl:DatatypeProperty rdf:ID="languageCode" />
-   <owl:DatatypeProperty rdf:ID="lastDateTimeVerified" />
-   <owl:DatatypeProperty rdf:ID="latitude" />
-   <owl:DatatypeProperty rdf:ID="localType" />
-   <owl:DatatypeProperty rdf:ID="longitude" />
-   <owl:DatatypeProperty rdf:ID="notAfter" />
-   <owl:DatatypeProperty rdf:ID="notBefore" />
-   <owl:DatatypeProperty rdf:ID="resourceRelationType" />
-   <owl:DatatypeProperty rdf:ID="scriptCode" />
-   <owl:DatatypeProperty rdf:ID="standardDate" />
-   <owl:DatatypeProperty rdf:ID="standardDateTime" />
-   <owl:DatatypeProperty rdf:ID="style" />
-   <owl:DatatypeProperty rdf:ID="transliteration" />
-   <owl:DatatypeProperty rdf:ID="vocabularySource" />
+   <rdf:Property rdf:ID="accuarcy" />
+   <rdf:Property rdf:ID="altitude" />
+   <rdf:Property rdf:ID="countryCode" />
+   <rdf:Property rdf:ID="cpfRelationType" />
+   <rdf:Property rdf:ID="functionRelationType" />
+   <rdf:Property rdf:ID="identityType" />
+   <rdf:Property rdf:ID="languageCode" />
+   <rdf:Property rdf:ID="lastDateTimeVerified" />
+   <rdf:Property rdf:ID="latitude" />
+   <rdf:Property rdf:ID="localType" />
+   <rdf:Property rdf:ID="longitude" />
+   <rdf:Property rdf:ID="notAfter" />
+   <rdf:Property rdf:ID="notBefore" />
+   <rdf:Property rdf:ID="resourceRelationType" />
+   <rdf:Property rdf:ID="scriptCode" />
+   <rdf:Property rdf:ID="standardDate" />
+   <rdf:Property rdf:ID="standardDateTime" />
+   <rdf:Property rdf:ID="style" />
+   <rdf:Property rdf:ID="transliteration" />
+   <rdf:Property rdf:ID="vocabularySource" />
 </rdf:RDF>
