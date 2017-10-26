@@ -108,7 +108,7 @@
       path: /etc/php/{{ php.version }}/apache2/php.ini
       backup: yes
       regexp: '^memory_limit = \d+M$'
-      line: 'memory_limit = 25MB'
+      line: 'memory_limit = -1'
     tags:
       - php
 
