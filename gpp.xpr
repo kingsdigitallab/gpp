@@ -10,6 +10,21 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>metadata/xsd/ead3.xsd</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>xsd2rdf</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>metadata/xsd/mets.xsd</String>
                                 </field>
                                 <field name="scenarioIds">
