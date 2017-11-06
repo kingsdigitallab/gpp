@@ -10,7 +10,7 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>metadata/xsd/ead3.xsd</String>
+                                    <String>metadata/xsd/cpf.xsd</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -40,7 +40,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>metadata/xsd/cpf.xsd</String>
+                                    <String>metadata/xsd/ead3.xsd</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>

@@ -356,7 +356,7 @@ License: http://rhizomik.net/redefer/xsd2owl.xsl.rdf
 		<xsl:call-template name="cardinality">
 			<xsl:with-param name="min" select="(@minOccurs | parent::*/@minOccurs)[1]" />
 			<xsl:with-param name="max" select="(@maxOccurs | parent::*/@maxOccurs)[1]" />
-			<xsl:with-param name="property" select="concat('#p.', @name)" />
+			<xsl:with-param name="property" select="concat('p.', @name)" />
 			<xsl:with-param name="forceRestriction" select="false()" />
 		</xsl:call-template>
 	</xsl:template>
@@ -366,7 +366,7 @@ License: http://rhizomik.net/redefer/xsd2owl.xsl.rdf
 		<xsl:call-template name="cardinality">
 			<xsl:with-param name="min" select="(@minOccurs | parent::*/@minOccurs)[1]" />
 			<xsl:with-param name="max" select="(@maxOccurs | parent::*/@maxOccurs)[1]" />
-			<xsl:with-param name="property" select="xo:rdfUri(concat('#p.', substring-after(@ref, '#')), namespace::*)" />
+			<xsl:with-param name="property" select="xo:rdfUri(@ref, namespace::*)" />
 			<xsl:with-param name="forceRestriction" select="true()" />
 		</xsl:call-template>
 	</xsl:template>
@@ -478,7 +478,7 @@ License: http://rhizomik.net/redefer/xsd2owl.xsl.rdf
 		</xsl:variable>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="{xo:rdfUri(concat('#p.', substring-after(@ref, '#')), namespace::*)}" />
+				<owl:onProperty rdf:resource="{xo:rdfUri(@ref, namespace::*)}" />
 				<owl:minCardinality rdf:datatype="&amp;xsd;nonNegativeInteger">
 					<xsl:value-of select="$minOccurs" />
 				</owl:minCardinality>
@@ -501,7 +501,7 @@ License: http://rhizomik.net/redefer/xsd2owl.xsl.rdf
 		<!--
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="#{@name}"/>
+				<owl:onProperty rdf:resource="#p.{@name}"/>
 				<owl:allValuesFrom rdf:resource="{xo:newRangeUri(., $baseEntity)}"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
