@@ -16,4 +16,7 @@ Vagrant.configure("2") do |config|
     ansible.playbook = ".vagrant_provisioning/playbook.yml"
     # ansible.tags = 'omeka'
   end
+
+  config.vm.synced_folder "../omeka-s", "/var/www/html/omeka-s",
+    owner: "vagrant", group: "www-data"
 end
