@@ -144,17 +144,6 @@
   gather_facts: false
 
   tasks:
-  - name: omeka | clone omeka repo
-    become: yes
-    git:
-      repo: '{{ omeka.url }}'
-      dest: '{{ omeka.path }}'
-      force: no
-      update: yes
-    ignore_errors: yes
-    tags:
-      - omeka
-
   - name: omeka | set permissions
     become: yes
     file:

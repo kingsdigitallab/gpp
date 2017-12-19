@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "gpp" do |gpp|
   end
 
-  config.vm.network "forwarded_port", guest: 80, host: 8000
+  config.vm.network "forwarded_port", guest: 80, host: 9000
   config.vm.network "forwarded_port", guest: 3030, host: 3030
 
   config.vm.provider "virtualbox" do |provider|
